@@ -17,7 +17,7 @@
 # industry_id = "1zIk_CJaMNM9DszWnB82wUV4FIltHGygn"
 # bs_ci_cfs_id = "1wCqzSRRhN9iJQxaYRWhsrM0mziVjaeB_"
 # material_usunrate_id = "14XMLaPMVeZZVusG2Co1i_69LX35JmU0i"
-
+from fastapi.responses import RedirectResponse
 from fastapi import FastAPI, HTTPException
 import pandas as pd
 import requests
