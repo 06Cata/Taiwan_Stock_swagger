@@ -26,8 +26,8 @@ import json
 import uvicorn
 
 app = FastAPI()
-df = pd.read_json('https://raw.githubusercontent.com/06Cata/Taiwan_Stock/main/swagger/industry.json')
-df_info = pd.read_json('https://raw.githubusercontent.com/06Cata/Taiwan_Stock/main/swagger/company_info.json')
+df = pd.read_json('https://raw.githubusercontent.com/06Cata/Taiwan_Stock_swagger/main/swagger/industry.json')
+df_info = pd.read_json('https://raw.githubusercontent.com/06Cata/Taiwan_Stock_swagger/main/swagger/company_info.json')
 
 @app.get("/industry/{stock_id}")
 def get_industry(stock_id: str):
